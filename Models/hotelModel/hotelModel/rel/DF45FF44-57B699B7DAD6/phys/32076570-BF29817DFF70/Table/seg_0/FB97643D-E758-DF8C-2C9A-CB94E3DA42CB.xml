@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="USUARIO" directorySegmentName="seg_0" id="FB97643D-E758-DF8C-2C9A-CB94E3DA42CB">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_USUARIO" id="03D6439F-2BD5-7306-AA85-6C56B4FE311D">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PASSWORD" id="1141EDEF-E72A-C94D-FDC3-3C01403D88F5">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APELLIDOPAT" id="183C27A9-65D8-CD3C-2FB0-77E2317F5CDC">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDUSU" id="1FFB3E8C-410C-C394-5289-AF29FB4D8E79">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIRECCION" id="29C1C83D-6943-2458-6ECA-4D80E28F94EB">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO" id="361E8743-54EC-21A9-263C-E9415E410CE5">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO" id="5B991037-43F9-6D29-797C-4CCB9DBF9A20">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHACREACION" id="5E260951-BC25-9EEE-A57D-AF77D891487A">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APELLIDOMAT" id="BDADA160-2B99-218F-8418-9CD0CE522051">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="BE66E8CE-2D8D-A541-A00F-ADCB9EC7EC3F">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DNI" id="CBAE6187-5D09-5070-4704-DDB03D6C1F64">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="DC30532F-C480-5D67-4E6D-13F1859072EF">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELEFONO" id="EC4C57C0-A7E0-DEDF-A4B8-1E1652A61831">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_USUARIO" id="FECA93BA-F248-FF54-BB00-7FE1DDCCAE86">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="USUARIO_UN" id="C907839C-C7DA-DE4D-77E3-6B9F698933A9">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:40:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

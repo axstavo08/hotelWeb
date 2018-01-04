@@ -1,0 +1,81 @@
+<html   xmlns="http://www.w3.org/1999/xhtml"   
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorator="layout/baseClient">
+    <head>
+        <title>Hotel - Cliente</title>
+        <link href="css/client.css" th:href="@{/css/client.css}" rel="stylesheet" type="text/css" /> 
+    </head>
+    <body>
+        <div layout:fragment="containerClient">
+
+
+            <div class="container" style="margin-bottom: 70px;">
+                <div class="row-fluid" style="margin-top: 75px;">
+                    <div class="span6">
+                        <div class="content textAlignCenter">
+                            <h2 class="servicesTitle">Tipo de Habitaci&oacute;n</h2>
+                        </div>    
+
+                        <div class="table-responsive">   
+                            <table class="table table-bordered tableClient">
+                                <thead>
+                                    <tr class="success">
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="typeRoom : ${typeRoomList}">
+                                        <td th:text="${typeRoom.name}">TypeRoom</td>
+                                        <td th:text="${typeRoom.price}">Price</td>
+                                    </tr>
+                                </tbody>
+
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <div class="content textAlignCenter">
+                            <h2 class="servicesTitle">Servicios</h2>
+                        </div>    
+
+                        <div class="table-responsive">   
+                            <table class="table table-bordered tableClient">
+                                <thead>
+                                    <tr class="success">
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="service : ${servicioList}">
+                                        <td th:text="${service.name}">Service</td>
+                                        <td th:text="${service.price}">Price</td>
+                                    </tr>
+                                </tbody>
+
+
+                            </table>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div layout:fragment="scripts">
+
+
+        </div>
+    </body>
+</html>
+
+
+
+
+

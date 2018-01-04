@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FE86913-A0C4-A0AA-2D6C-68501E6A82F5" name="CLIENTE">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:43:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDCLIENTE" id="06A88955-5978-D4CC-B43A-32BEDCEF0162">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:44:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SQ_CLIENTE</autoIncrementSequenceName>
+<autoIncrementTriggerName>TG_CLIENTE</autoIncrementTriggerName>
+</Column>
+<Column name="CIUDAD" id="EBD6CAD0-9F7C-1E6A-5BEE-2720837598A2">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:44:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIS" id="66AD8219-1142-7655-62CA-560F42EE4029">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:44:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDUSU" id="5BDE25F5-1DD2-8237-5619-3122ECDCDDBA">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:44:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>1FFB3E8C-410C-C394-5289-AF29FB4D8E79</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2971B9C0-4457-B3A4-D85F-EE30818BD24F" referredColumn="1FFB3E8C-410C-C394-5289-AF29FB4D8E79"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="929341A7-18E2-5752-C394-58D6FC639A10" name="PK_CLIENTE">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:45:10 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06A88955-5978-D4CC-B43A-32BEDCEF0162"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDC296DE-CA2A-6FCB-E594-3825155E5836" name="PK_CLIENTE">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:45:10 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06A88955-5978-D4CC-B43A-32BEDCEF0162"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F16B0E62-E30A-9E27-7AFA-74AE0AF24EE6" name="CLIENTE_USUARIO_FK">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:45:53 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5BDE25F5-1DD2-8237-5619-3122ECDCDDBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

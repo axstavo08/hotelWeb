@@ -1,0 +1,117 @@
+<html   xmlns="http://www.w3.org/1999/xhtml"   
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorator="layout/base">
+    <head>
+        <title>Hotel - Inicio</title>
+        <link href="templates/landy/css/style.css" th:href="@{/templates/landy/css/style.css}" rel="stylesheet" type="text/css" />
+        <link href="templates/motelweb/css/jquery-ui.css" th:href="@{/templates/motelweb/css/jquery-ui.css}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div layout:fragment="container">
+
+            <!--<div class="banner-info">
+                <div class="container">
+                    <div class="details-1">
+                        <form method="POST" th:action="@{/hotel}" th:object="${reservation}" data-js="reservation">
+                            <div class="col-md-10 dropdown-buttons">   
+
+                                <div align="center" class="col-md-4 dropdown-button">           			
+                                    <div class="book_date">
+                                        <input class="date" id="datepicker" th:field="*{checkIn}" type="text" value="Check In" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                                    this.value = 'Check In';}"></input>
+                                    </div>		
+                                </div>
+
+                                <div align="center" class="col-md-4 dropdown-button">           			
+                                    <div class="book_date">
+                                        <input class="date1" id="datepicker1" th:field="*{checkOut}" type="text" value="Check Out" onfocus="this.value = '';" onblur="if (this.value == '') {
+                                                    this.value = 'Check Out';}"></input>
+                                    </div>		
+                                </div>
+
+                                <div align="center" class="col-md-4 dropdown-button">
+                                    <div class="section_1">
+                                        <select id="country" onchange="change_country(this.value)" class="frm-field required" style="width: 75% !important;">
+                                            <option value="default">SELECCIONA</option>
+                                            <option th:each="typeRoom : ${typeRooms}"
+                                                    th:value="${typeRoom.idTypeRoom}"
+                                                    th:text="${typeRoom.name}">
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div> 
+                            
+                                <button class="btn btn-success btn-large" type="submit">Reservar</button>
+                            
+                            <div class="clearfix"> </div>
+                        </form>
+                    </div>
+                </div>
+            </div>-->
+
+            <div class="hod">
+                <div class="container">
+
+                    <div class="col-md-6 hod-left">
+                        <img src="images/fachada.jpg" class="img-responsive" alt="HotelWeb"></img>
+                    </div>
+
+                    <div class="col-md-6 hod-right">
+                        <h2>&#161;Bienvenido&#33;</h2>
+                        <p>Hotel cuenta con instalaciones modernas, nueva estructura, amplias habitaciones. Est&aacute; ubicado en el coraz&oacute;n de la capital y convertido en una v&iacute;ade paso obligado para cruzar la ciudad y acceso a los centros financieros y tur&iacute;sticos de la capital.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <!-- tels -->
+            <div class="tels">
+                <div class="container">
+                    <div class="col-md-4 tels-left">
+                        <h4>Habitaci&oacute;n Individual</h4>
+                        <img src="images/singleroom.jpg" class="img-responsive" alt="Hotel-SingleRoom"></img>
+                        <p>Habitaci&oacute;n simple con una sola cama, con espacio para una persona.</p>
+                    </div>
+                    <div class="col-md-4 tels-left">
+                        <h4>Habitaci&oacute;n Doble</h4>
+                        <img src="images/doubleroom.jpg" class="img-responsive" alt="Hotel-DoubleRoom"></img>
+                        <p>Habitaci&oacute;n con dos camas, con espacio para dos personas en general.</p>
+                    </div>
+                    <div class="col-md-4 tels-left">
+                        <h4>Habitaci&oacute;n Matrimonial</h4>
+                        <img src="images/marriedroom.jpg" class="img-responsive" alt="Hotel-MarriedRoom"></img>
+                        <p>Habitaci&oacute;n grande con cama, con espacio para dos personas.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- tels -->
+
+
+
+        </div>
+
+        <div layout:fragment="scripts">
+
+            <script src="templates/motelweb/js/jquery-ui.js" th:src="@{/templates/motelweb/js/jquery-ui.js}"></script>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" th:inline="javascript" >
+
+                                            $(function () {
+                                                $("#datepicker,#datepicker1").datepicker();
+                                            });
+
+                                            $(document).ready(function () {
+
+                                            });
+
+</script>
+
+
+

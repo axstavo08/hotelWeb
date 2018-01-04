@@ -1,0 +1,207 @@
+<html   xmlns="http://www.w3.org/1999/xhtml"   
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorator="layout/baseEmployee">
+    <head>
+        <title>Hotel - Empleado</title>
+        <link href="js/library/daterangepickermaster/daterangepicker.css" 
+              th:href="@{/js/library/daterangepickermaster/daterangepicker.css}" rel="stylesheet" type="text/css"></link>
+    </head>
+    <body>
+        <div layout:fragment="containerEmployee">
+            <div class = "container">
+                <div class="row-fluid">
+
+                    <div class="span6" style="margin: 0 28% !important;">
+                        <div class = "widget">
+                            <div class="widget-header">
+                                <h2 class="reservTitle">Agregar Empleado</h2>
+                            </div>
+                            <div class="widget-content">
+                                <form method="POST" th:action="@{/employee/addEmployee}" th:object="${addEmployee}" data-js="addEmployee">
+                                    <div th:if="${errorAddEmployee}==1" class="alert alert-danger errorGeneral">
+                                        <strong>Problema:</strong> La creaci&oacute;n se complet&oacute; con errores. Favor de volver a intentar.
+                                    </div>
+                                    <div class="content-form">
+                                        <div class="row-fluid reservation">
+                                            <div class="span6">
+                                                <div class="control-group forms reservationForm">
+                                                    <label class="control-label" for="">Usuario</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="span6">
+                                                <div class="controls">
+                                                    <input id="username" class="span2 reservationFormInput" type="text" th:field="*{username}"></input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-form">
+                                        <div class="row-fluid reservation">
+                                            <div class="span6">
+                                                <div class="control-group forms reservationForm">
+                                                    <label class="control-label" for="">Contrase&ntilde;a</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="span6">
+                                                <div class="controls">
+                                                    <input id="password" class="span2 reservationFormInput" type="password" th:field="*{password}"></input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-form">
+                                        <div class="row-fluid reservation">
+                                            <div class="span6">
+                                                <div class="control-group forms reservationForm">
+                                                    <label class="control-label" for="">Fecha de Ingreso</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="span6">
+                                                <div class="controls">
+                                                    <input id="inJob" class="span2 reservationFormInput" placeholder = "Fecha de Ingreso" type="text" th:field="*{inJob}"></input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-form">
+                                        <div class="row-fluid reservation">
+                                            <div class="span6">
+                                                <div class="control-group forms reservationForm">
+                                                    <label class="control-label" for="">Fecha de Salida</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="span6">
+                                                <div class="controls">
+                                                    <input id="outJob" class="span2 reservationFormInput" placeholder = "Fecha de Salida" type="text" th:field="*{outJob}"></input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-form">
+                                        <div class="row-fluid reservation">
+                                            <div class="span6">
+                                                <div class="control-group forms reservationForm">
+                                                    <label class="control-label" for="">Nombre</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="span6">
+                                                <div class="controls">
+                                                    <input id="name" class="span2 reservationFormInput" type="text" th:field="*{name}"></input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-form">
+                                        <div class="row-fluid reservation">
+                                            <div class="span6">
+                                                <div class="control-group forms reservationForm">
+                                                    <label class="control-label" for="">Apellido Paterno</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="span6">
+                                                <div class="controls">
+                                                    <input id="lastNamePat" class="span2 reservationFormInput" type="text" th:field="*{lastNamePat}"></input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-form">
+                                        <div class="row-fluid reservation">
+                                            <div class="span6">
+                                                <div class="control-group forms reservationForm">
+                                                    <label class="control-label" for="">Apellido Materno</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="span6">
+                                                <div class="controls">
+                                                    <input id="lastNameMat" class="span2 reservationFormInput" type="text" th:field="*{lastNameMat}"></input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-form">
+                                        <div class="row-fluid reservation">
+                                            <div class="span6">
+                                                <div class="control-group forms reservationForm">
+                                                    <label class="control-label" for="">Correo Electr&oacute;nico</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="span6">
+                                                <div class="controls">
+                                                    <input id="email" class="span2 reservationFormInput" type="text" th:field="*{email}"></input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-form">
+                                        <div class="row-fluid reservation">
+                                            <div class="span6">
+                                                <div class="control-group forms reservationForm">
+                                                    <label class="control-label" for="">Puesto Laboral</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="span6">
+                                                <div class="controls">
+                                                    <input id="job" class="span2 reservationFormInput" type="text" th:field="*{job}"></input>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-fluid" >
+                                        <div class="span3 reservBtn">
+                                            <a>
+                                                <button class="button btn btn-success btn-large" type="submit">Agregar</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div><!--widget-content-->	
+                        </div><!--widget-->
+                    </div><!--span6-->
+                </div><!--row-fluid-->
+
+
+            </div>
+
+        </div>
+
+        <div layout:fragment="scripts">
+            <script src="js/library/daterangepickermaster/moment.min.js" th:src="@{/js/library/daterangepickermaster/moment.min.js}"></script>
+            <script src="js/library/daterangepickermaster/daterangepicker.js" th:src="@{/js/library/daterangepickermaster/daterangepicker.js}"></script>
+            <script src="js/addEmployee.js" th:src="@{/js/addEmployee.js}"></script>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" th:inline="javascript" >
+
+    var addEmployeeSuccess = /*[[${addEmployeeSuccess}]]*/ '0';
+
+    $(document).ready(function () {
+        initJobEmployee();
+    });
+
+</script>
+
+
+
+

@@ -1,0 +1,79 @@
+<html   xmlns="http://www.w3.org/1999/xhtml"   
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorator="layout/baseEmployee">
+    <head>
+        <title>Hotel - Empleado</title>
+        <link href="js/library/datatables/media/css/dataTables.bootstrap" 
+              th:href="@{/js/library/datatables/media/css/dataTables.bootstrap}" rel="stylesheet" type="text/css" /> 
+        <link href="css/tables.css" th:href="@{/css/tables.css}" rel="stylesheet" type="text/css" /> 
+    </head>
+    <body>
+        <div layout:fragment="containerEmployee">
+            <div class="container" style="margin-bottom: 95px;">
+                <div class="row-fluid" style="margin-top: 95px;">
+                    <div class="span9">
+                        <div class="content textAlignCenter">
+                            <h2 class="servicesTitle">Lista de Empleados</h2>
+                        </div>  
+                    </div>
+                    <div class="span3">
+                        <a th:href="@{/employee/addEmployee}">
+                            <button class="button btn btn-info btn-large">Agregar</button>
+                        </a>
+                    </div>
+                </div>  
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="table-responsive  tableRoom">   
+                            <table id="tableRoom" class="table table-bordered table-striped tableClient">
+                                <thead>
+                                    <tr class="success">
+                                        <th class="hidden">Idusu</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido Paterno</th>
+                                        <th>Apellido Materno</th>
+                                        <th>Puesto Laboral</th>
+                                        <th class="hidden"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="employee : ${employeeList}">
+                                        <td class="hidden" th:text="${employee.idEmployee}">Id</td>
+                                        <td th:text="${employee.users.name}">Name</td>
+                                        <td th:text="${employee.users.lastNamePat}">ApellidoPat</td>
+                                        <td th:text="${employee.users.lastNameMat}">ApellidoMat</td>
+                                        <td th:text="${employee.job}">Job</td>
+                                        <td class="hidden">Ver</td>
+                                    </tr>
+                                </tbody>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div layout:fragment="scripts">
+            <script src="js/library/datatables/media/js/jquery.dataTables.js" th:src="@{/js/library/datatables/media/js/jquery.dataTables.js}"></script>
+            <script src="js/library/datatables/media/js/dataTables.bootstrap.js" th:src="@{/js/library/datatables/media/js/dataTables.bootstrap.js}"></script>
+            <script src="js/roomsEmployee.js" th:src="@{/js/roomsEmployee.js}"></script>
+            <script src="js/datatablesLan.js" th:src="@{/js/datatablesLan.js}"></script>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" th:inline="javascript" >
+
+    $(document).ready(function () {
+        initFunction();
+    });
+
+</script>
+
+
+
+

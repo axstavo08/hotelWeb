@@ -1,0 +1,83 @@
+<html   xmlns="http://www.w3.org/1999/xhtml"   
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorator="layout/baseEmployee">
+    <head>
+        <title>Hotel - Inicio Empleado</title>
+        <link href="js/library/datatables/media/css/dataTables.bootstrap" 
+              th:href="@{/js/library/datatables/media/css/dataTables.bootstrap}" rel="stylesheet" type="text/css" /> 
+        <link href="css/tables.css" th:href="@{/css/tables.css}" rel="stylesheet" type="text/css" /> 
+    </head>
+    <body>
+        <div layout:fragment="containerEmployee">
+            <div class="container" style="margin-bottom: 150px;">
+                <div class="row-fluid" style="margin-top: 40px;">
+                    <div class="span12">
+                        <div class="content textAlignCenter">
+                            <h2 class="servicesTitle">Lista de Reservas</h2>
+                        </div>    
+
+                        <div class="table-responsive  tableRoom">   
+                            <table id="tableRoom" class="table table-bordered table-striped tableClient">
+                                <thead>
+                                    <tr class="success">
+                                        <th class="hidden">Id</th>
+                                        <th>Cliente</th>
+                                        <th>Nro Habitaciones</th>
+                                        <th>Registro de Llegada</th>
+                                        <th>Registro de Salida</th>
+                                        <th>Estado</th>
+                                        <th>Importe Estimado</th>
+                                        <th>Cancelar</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="reservation : ${reservationList}">
+                                        <td class="hidden" th:text="${reservation.idReservation}">Id</td>
+                                        <td th:text="${reservation.client.users.name}+' '+${reservation.client.users.lastNamePat}">ClientName</td>
+                                        <td th:text="${reservation.nroRooms}">NroRoom</td>
+                                        <!--<td th:text="${reservation.checkIn}">CheckIn</td>-->
+                                        <td th:text="${#calendars.format(reservation.checkIn,'dd/MM/yyyy HH:mm a')}">CheckIn</td>
+                                        <td th:text="${#calendars.format(reservation.checkOut,'dd/MM/yyyy hh:mm a')}">CheckOut</td>
+                                        <td th:text="${reservation.status}">Status</td>
+                                        <td th:text="${reservation.amount}">ImportTotal</td>
+                                        <td class="width_10px">
+                                            <a th:href="@{'/employee/reservation/'+${reservation.idReservation}+'/cancel'}">
+                                                <span class="label label-danger">Cancelar</span>
+                                            </a>
+                                        </td>
+                                        <td class="width_10px">
+                                            <a th:href="@{'/employee/reservation/'+${reservation.idReservation}}">
+                                                <span class="label label-info">Ver</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div layout:fragment="scripts">
+            <script src="js/library/datatables/media/js/jquery.dataTables.js" th:src="@{/js/library/datatables/media/js/jquery.dataTables.js}"></script>
+            <script src="js/library/datatables/media/js/dataTables.bootstrap.js" th:src="@{/js/library/datatables/media/js/dataTables.bootstrap.js}"></script>
+            <script src="js/roomsEmployee.js" th:src="@{/js/roomsEmployee.js}"></script>
+            <script src="js/datatablesLan.js" th:src="@{/js/datatablesLan.js}"></script>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" th:inline="javascript" >
+
+    $(document).ready(function () {
+        initFunction();
+    });
+
+</script>
+
+
+

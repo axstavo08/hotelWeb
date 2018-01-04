@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>
+   <object objectType="User" objectID="MDSYS" name="MDSYS" seqName="seg_0"/>
+   <object objectType="User" objectID="PUBLIC" name="PUBLIC" seqName="seg_0"/>
+   <object objectType="SType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="SDO_GEOMETRY" seqName="seg_0"/>
+   <object objectType="SType" objectID="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" name="XMLTYPE" seqName="seg_0"/>
+   <object objectType="Table" objectID="1622524E-FE6D-AD48-820B-680D567DA112" name="DETALLE_RESERVA_SERVICIO" seqName="seg_0"/>
+   <object objectType="Table" objectID="5FE86913-A0C4-A0AA-2D6C-68501E6A82F5" name="CLIENTE" seqName="seg_0"/>
+   <object objectType="Table" objectID="6FF2A310-0D87-57AD-778A-B0F7821A6919" name="DETALLE_RESERVA_HABITACION" seqName="seg_0"/>
+   <object objectType="Table" objectID="733ECB8C-7653-E073-1B56-C52B8DD64366" name="RESERVA" seqName="seg_0"/>
+   <object objectType="Table" objectID="8AC0B660-2644-A15E-D04E-E48C6341E7E5" name="TIPOHABITACION" seqName="seg_0"/>
+   <object objectType="Table" objectID="90EC71FD-299E-1327-9401-2AA0F05D1A6E" name="SERVICIO" seqName="seg_0"/>
+   <object objectType="Table" objectID="B4D4E310-83E4-83D7-B563-7B04B63C19A4" name="HABITACION" seqName="seg_0"/>
+   <object objectType="Table" objectID="D3BAF509-D79C-1F2A-E8EF-BD5C9BABAE51" name="EMPLEADO" seqName="seg_0"/>
+   <object objectType="Table" objectID="FB97643D-E758-DF8C-2C9A-CB94E3DA42CB" name="USUARIO" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>

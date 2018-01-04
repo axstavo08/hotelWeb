@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90EC71FD-299E-1327-9401-2AA0F05D1A6E" name="SERVICIO">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:46:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDSERVICIO" id="CA17B200-27E6-6A45-3836-89753743FBBD">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:49:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SQ_SERVICIO</autoIncrementSequenceName>
+<autoIncrementTriggerName>TG_SERVICIO</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="0E34FF0D-BD81-2381-94A9-91B0C81C5D98">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:49:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="CEB56CCC-D707-4024-E0EA-99F1998733C0">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:49:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO" id="9C409E05-1BC5-85EC-92AB-209F131F6C4E">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:49:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48C965F0-44EC-E868-3A36-5DEF8FE29D41" name="PK_SERVICIO">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:49:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA17B200-27E6-6A45-3836-89753743FBBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CAA1340-8419-63BA-80D3-B00F94533C16" name="SERVICIO_UN">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:49:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E34FF0D-BD81-2381-94A9-91B0C81C5D98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6ED49E0-E47B-6917-B5B1-AE9A614D26D5" name="PK_SERVICIO">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:49:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA17B200-27E6-6A45-3836-89753743FBBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

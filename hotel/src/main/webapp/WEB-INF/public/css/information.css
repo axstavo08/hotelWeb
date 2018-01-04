@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/11/2016, 12:51:11 AM
+    Author     : Tavo
+*/
+
+#map-info{
+    display:block;
+}
+
+#map-info.active{
+    display:block;
+}
+
+#map{
+    width: 100% !important;
+    height: 650px !important;
+    margin: 0px auto;
+    z-index: 0 !important;
+}
+
+
+
+.map-align{
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-right: 600px;
+}
+
+.titles-info{
+    font-size: 14px;
+}
+
+.information{
+    margin-top: 50px;
+    padding: 20px 60px;
+}
+
+.infoBox1{
+    font-size: 22px !important;
+    text-align: center;
+    display: inherit !important;
+    margin: 20px auto;
+}
+
+.infoHotel{
+    margin: 20px 10px;
+}

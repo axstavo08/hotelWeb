@@ -1,0 +1,90 @@
+<html   xmlns="http://www.w3.org/1999/xhtml"   
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        >
+    <head>
+        <title>Hotel - Inicio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv='X-UA-Compatible' content='IE-11' />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="icon" type = "image/png" th:ref="@{/images/hotel-icon.png}" href="images/hotel-icon.png"/>
+        <!-- CSS/JS -->
+        <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link href="templates/motelweb/css/bootstrap.css" 
+              th:href="@{/templates/motelweb/css/bootstrap.css}" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" 
+              th:href="@{/css/style.css}" rel="stylesheet" type="text/css" />
+        <link href="templates/motelweb/css/style.css" 
+              th:href="@{/templates/motelweb/css/style.css}" rel="stylesheet" type="text/css" />
+        <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600" rel="stylesheet" type="text/css" />
+        <link href="css/base.css" th:href="@{/css/base.css}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- banner -->
+        <div class="banner withoutSpace-banner">
+            <div class="header banner-hotel">
+                <div class="container">
+                    <div class="logo">
+                        <h1><a href="#" th:href="@{/}">Hotel</a></h1>
+                    </div>
+                    <nav class="navbar navbar-default" role="navigation">s
+                        <!--/.navbar-header-->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav ul-hotel">
+                                <li class="active"><a href="#" th:href="@{/}">Inicio</a></li>
+                                <!--<li><a href="#">Habitaciones</a></li>-->
+                                <li><a href="#1" th:href="@{/information}">Informaci&oacute;n</a></li>
+                                <!--<li><a href="#">Cont&aacute;ctanos</a></li>-->
+                                <li><a href="#2" th:href="@{/login}">Iniciar Sesi&oacute;n</a></li>
+                            </ul>
+                        </div>
+                        <!--/.navbar-collapse-->
+                    </nav>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>		
+        <!-- banner -->
+
+
+        <!-- Container General -->
+        <div id="main-container" layout:fragment="container">
+
+
+        </div>
+
+
+        <div class="footer-bottom footer-hotel">
+            <div class="container">
+                <p>&copy; 2016 Hotel. Todos los derechos reservados | Design by Gustavo Ramos and W3layouts</p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Javascript layout -->
+        <div th:remove="tag">
+            <script src="templates/motelweb/js/jquery-1.11.1.min.js" th:src="@{/templates/motelweb/js/jquery-1.11.1.min.js}"></script>
+            <script src="templates/motelweb/js/bootstrap.js" th:src="@{/templates/motelweb/js/bootstrap.js}"></script>
+            <script src="js/strings.js" th:src="@{/js/strings.js}"></script>
+            <script src="js/app.js" th:src="@{/js/app.js}"></script>
+        </div>
+
+
+        <div layout:fragment = "scripts">
+
+
+        </div>
+
+        <div layout:fragment="modalSignin" th:replace="modals/modal :: modalSignin">
+
+        </div>
+    </body>
+</html>
+
+

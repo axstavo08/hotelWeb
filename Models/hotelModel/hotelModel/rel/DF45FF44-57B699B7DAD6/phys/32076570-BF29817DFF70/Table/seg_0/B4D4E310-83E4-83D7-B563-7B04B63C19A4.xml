@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="HABITACION" directorySegmentName="seg_0" id="B4D4E310-83E4-83D7-B563-7B04B63C19A4">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:52:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_HABITACION" id="70F18532-C7DB-2E93-B4DE-F57BDCD3727F">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DISPONIBLE" id="70D83A3C-76EE-0024-375C-C2F7C0F6B3B2">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDTIPOHAB" id="CCD34E84-B54E-E212-AD0E-404E2AAC9721">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NROHABITACION" id="E5412452-3CB3-7C5E-34AB-5A2E770A6A18">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="EE86DA63-2963-DC48-A9F9-35D12E11C334">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDHABITACION" id="F5C6BEBB-AEF2-E4CD-0300-301DFA20B91B">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_HABITACION_TIPO" id="4DE5A64D-F32B-9E89-6AEF-8C5B7918C841">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 06:00:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_HABITACION" id="88DB97AE-078C-5DF2-4DB6-BA458091CEEC">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="HABITACION_UN" id="24EF95E4-4B88-8E7D-EDD8-6CDC2FECA1A8">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="1622524E-FE6D-AD48-820B-680D567DA112" name="DETALLE_RESERVA_SERVICIO" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="5FE86913-A0C4-A0AA-2D6C-68501E6A82F5" name="CLIENTE" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="6FF2A310-0D87-57AD-778A-B0F7821A6919" name="DETALLE_RESERVA_HABITACION" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="733ECB8C-7653-E073-1B56-C52B8DD64366" name="RESERVA" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="8AC0B660-2644-A15E-D04E-E48C6341E7E5" name="TIPOHABITACION" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="90EC71FD-299E-1327-9401-2AA0F05D1A6E" name="SERVICIO" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="B4D4E310-83E4-83D7-B563-7B04B63C19A4" name="HABITACION" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="D3BAF509-D79C-1F2A-E8EF-BD5C9BABAE51" name="EMPLEADO" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="FB97643D-E758-DF8C-2C9A-CB94E3DA42CB" name="USUARIO" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="2971B9C0-4457-B3A4-D85F-EE30818BD24F" name="CLIENTE_USUARIO_FK" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="7D004A3F-2FEF-6911-6EE9-D204D82D2082" name="FK_RESERVA_SERVICIO" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="7D2C3B78-7FE2-5859-BE11-80784A9C0476" name="RESERVA_CLIENTE_FK" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="883E49FF-C1C2-7FA3-FAA6-2EE7548C30AC" name="EMPLEADO_USUARIO_FK" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="A0C01B03-8D54-00BE-8B8F-47C756C4830F" name="FK_SERVICIO_RESERVA" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="AC9A7D9F-E6BB-5A8F-3F65-A360476B49EC" name="FK_RESERVA_HABITACION" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="BB6F4081-F4E0-7B90-38EF-C2890CC9C085" name="FK_HABITACION_RESERVA" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="BDEBCEB6-0106-8DAC-3B12-07ACB71E8D4F" name="FK_HABITACION_TIPO" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Note" objectID="A0E2DE8C-4C88-72E1-9416-9A0A426BDD83" name="Note_2" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Note" objectID="EF3AECEB-DE21-89B2-B398-AA3ED6F99A11" name="Note_1" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

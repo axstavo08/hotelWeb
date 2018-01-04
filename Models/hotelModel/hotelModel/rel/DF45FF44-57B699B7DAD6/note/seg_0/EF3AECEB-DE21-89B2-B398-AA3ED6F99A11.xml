@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_1" directorySegmentName="seg_0" id="EF3AECEB-DE21-89B2-B398-AA3ED6F99A11">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-11-30 08:50:50 UTC</createdTime>
+<comment>Esta relación es de uno a uno.</comment>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</Note>

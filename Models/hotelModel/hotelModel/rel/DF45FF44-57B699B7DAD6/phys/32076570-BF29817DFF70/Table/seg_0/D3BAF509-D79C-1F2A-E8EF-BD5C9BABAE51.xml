@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EMPLEADO" directorySegmentName="seg_0" id="D3BAF509-D79C-1F2A-E8EF-BD5C9BABAE51">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:46:56 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_EMPLEADO" id="CF8C3C43-0037-3CBF-F5A8-01ED5F3664E9">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:49:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PUESTOLABORAL" id="052FC710-3B47-D19C-21C3-F9CE2185F7AD">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:48:51 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHAINGRESO" id="398FB40A-EB48-269E-C149-6857AD0F02D3">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:48:51 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDUSU" id="4C35720A-56A2-DA97-582E-97966A3D2815">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:48:51 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHASALIDA" id="590E531E-71ED-C938-D4E0-64D87200FADF">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:48:51 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHACREACION" id="6CF2D7ED-FC05-C8B3-6CE9-6C3B878809EF">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:48:51 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDEMPLEADO" id="F6021663-DECA-59A7-CB09-F4FB95D2FFE4">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:48:51 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMPLEADO_USUARIO_FK" id="02608966-B076-71CD-E084-5146AAE48EAB">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:50:16 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_EMPLEADO" id="199F864A-534A-A108-9978-75D689B44CE1">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:49:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

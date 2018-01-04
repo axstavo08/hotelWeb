@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7D004A3F-2FEF-6911-6EE9-D204D82D2082" name="FK_RESERVA_SERVICIO">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:50:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<containerWithKeyObject>1622524E-FE6D-AD48-820B-680D567DA112</containerWithKeyObject>
+<deleteRule>CASCADE</deleteRule>
+<localFKIndex>096A2928-9501-849E-45EC-83C93E17505D</localFKIndex>
+<keyObject>EE3FA0CA-A89C-6F45-63C1-86BE29D388F4</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

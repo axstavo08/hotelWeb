@@ -1,0 +1,61 @@
+<html   xmlns="http://www.w3.org/1999/xhtml"   
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorator="layout/baseEmployee">
+    <head>
+        <title>Hotel - Empleado</title>
+        <link href="js/library/datatables/media/css/dataTables.bootstrap" 
+              th:href="@{/js/library/datatables/media/css/dataTables.bootstrap}" rel="stylesheet" type="text/css" /> 
+        <link href="css/tables.css" th:href="@{/css/tables.css}" rel="stylesheet" type="text/css" /> 
+    </head>
+    <body>
+        <div layout:fragment="containerEmployee">
+            <div class="container" style="margin-bottom: 70px;">
+                <div class="row-fluid" style="margin-top: 40px;">
+                    <div class="span12">
+                        <div class="content textAlignCenter">
+                            <h2 class="servicesTitle">Habitaciones</h2>
+                        </div>    
+
+                        <div class="table-responsive  tableRoom">   
+                            <table id="tableRoom" class="table table-bordered table-striped tableClient">
+                                <thead>
+                                    <tr class="success">
+                                        <th>Nro Habitaci&oacute;n</th>
+                                        <th>Tipo de Habitaci&oacute;n</th>
+                                        <th>Disponible</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr th:each="room : ${roomList}">
+                                        <td th:text="${room.nroRoom}">NroRoom</td>
+                                        <td th:text="${room.typeRoom}">TypeRoom</td>
+                                        <td th:text="${room.available}">Available</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div layout:fragment="scripts">
+            <script src="js/library/datatables/media/js/jquery.dataTables.js" th:src="@{/js/library/datatables/media/js/jquery.dataTables.js}"></script>
+            <script src="js/library/datatables/media/js/dataTables.bootstrap.js" th:src="@{/js/library/datatables/media/js/dataTables.bootstrap.js}"></script>
+            <script src="js/roomsEmployee.js" th:src="@{/js/roomsEmployee.js}"></script>
+            <script src="js/datatablesLan.js" th:src="@{/js/datatablesLan.js}"></script>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" th:inline="javascript" >
+
+    $(document).ready(function () {
+        initFunction();
+    });
+
+</script>
+
+
+

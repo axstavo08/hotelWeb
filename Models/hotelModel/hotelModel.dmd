@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="hotelModel" id="6557E749-390D-F1CA-AD71-51A1F5BE7103" version="3.5">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:24:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>6557E749-390D-F1CA-AD71-51A1F5BE7103</designId>
+</OSDM_Design>

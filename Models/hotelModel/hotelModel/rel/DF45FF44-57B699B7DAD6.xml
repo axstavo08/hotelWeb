@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="HotelWeb" id="DF45FF44-14D4-D643-30B7-57B699B7DAD6" mainViewID="726DF3EC-535F-394D-01FF-34C9B13BB674">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:31:04 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<redirectConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>Hotel</connName>
+<connUrl>jdbc:oracle:thin:@192.168.1.78:1521:xe</connUrl>
+<connUser>hotel</connUser>
+<connType>1</connType>
+<syncSelected>-1</syncSelected>
+</redirectConnectionStamp>
+</relationalModel>

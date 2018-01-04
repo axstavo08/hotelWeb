@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1622524E-FE6D-AD48-820B-680D567DA112" name="DETALLE_RESERVA_SERVICIO">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:44:32 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDRESERVA" id="DFA1086D-CDA1-D449-FCFC-DC9F77023B8F">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:45:07 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>1D38AC40-E091-DE1C-73E0-98AC5A045DB9</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D004A3F-2FEF-6911-6EE9-D204D82D2082" referredColumn="1D38AC40-E091-DE1C-73E0-98AC5A045DB9"/>
+</associations>
+</Column>
+<Column name="IDSERVICIO" id="6920F3D0-E482-DCE0-A02D-234B2E69CE82">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:45:07 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>CA17B200-27E6-6A45-3836-89753743FBBD</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0C01B03-8D54-00BE-8B8F-47C756C4830F" referredColumn="CA17B200-27E6-6A45-3836-89753743FBBD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7E755CB0-A2D4-8BC6-E697-C18BEA09465D" name="PK_RESERVA_SERVICIO">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:45:47 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFA1086D-CDA1-D449-FCFC-DC9F77023B8F"/>
+<colUsage columnID="6920F3D0-E482-DCE0-A02D-234B2E69CE82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2E4FF8B-DBD2-EB4E-B0CB-FAA3A79786D2" name="PK_RESERVA_SERVICIO">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:45:47 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFA1086D-CDA1-D449-FCFC-DC9F77023B8F"/>
+<colUsage columnID="6920F3D0-E482-DCE0-A02D-234B2E69CE82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6C7CE55-B8F4-A36D-9517-2DC10CC15E83" name="FK_SERVICIO_RESERVA">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:50:00 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6920F3D0-E482-DCE0-A02D-234B2E69CE82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="096A2928-9501-849E-45EC-83C93E17505D" name="FK_RESERVA_SERVICIO">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:50:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFA1086D-CDA1-D449-FCFC-DC9F77023B8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

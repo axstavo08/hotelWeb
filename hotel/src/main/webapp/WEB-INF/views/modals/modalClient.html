@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <title>Reservation</title>
+    </head>
+    <body>
+        <div th:fragment="modalReserv" class="modal fade" id="modalReserv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-body modal-bodyHotel">
+                <div class="well modal-wellHotel">
+                    <div id="myTabContent" class="tab-content">
+                        <div id="conditionalModal" th:if="${reservSucess}==0">
+                            <h3 align="left">Se realiz&oacute; la reservaci&oacute;n correctamente. &iquest;Desea realizar otra reservaci&oacute;n&#63;</h3>
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <div align="center" class="modal-button">
+                                        <a th:href="@{/client/reservation}">
+                                            <button name="modal" class="btn btn-success btn-large">Si</button> 
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <div align="center" class="modal-button">
+                                        <a th:href="@{/client}">
+                                            <button name="modal" class="btn btn-danger btn-large">No</button> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,62 @@
+<html   xmlns="http://www.w3.org/1999/xhtml"   
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorator="layout/base">
+    <head>
+        <title>Hotel - Inicio</title>
+        <link href="templates/landy/css/style.css" th:href="@{/templates/landy/css/style.css}" rel="stylesheet" type="text/css" />
+        <link href="templates/motelweb/css/jquery-ui.css" th:href="@{/templates/motelweb/css/jquery-ui.css}" rel="stylesheet" type="text/css" />
+        <link href="css/signin.css" th:href="@{/css/signin.css}" rel="stylesheet" type="text/css" />
+        <link href="css/login.css" th:href="@{/css/login.css}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div layout:fragment="container">
+
+            <div class="account-container" style="margin-bottom: 90px;">
+                <div class="content clearfix">
+                    <form method="POST" th:action="@{/login/authenticate}" data-js="login">
+                        <div th:if="${error}==true" class="alert alert-danger errorGeneral">
+                            <strong>Error: </strong>Su usuario y/o contrase&ntilde;a no coincide.
+                        </div>
+                        <h1 style="text-align: center;">Inicio de Sesi&oacute;n</h1>		
+                        <div class="login-fields">
+                            <div class="field">
+                                <label class="login-labels" for="username">Usuario</label>
+                                <input type="text" id="username" class="login username-field" name="username" placeholder="Usuario"></input> 
+                            </div> <!-- /field -->
+
+                            <div class="field">
+                                <label class="login-labels" for="password">Contrase&ntilde;a</label>
+                                <input type="password" id="password" class="login password-field" name="password" placeholder="Contrase&ntilde;a"></input>
+                            </div> <!-- /password -->
+                        </div> <!-- /login-fields -->
+
+                        <div class="login-actions">
+                            <div class="row-fluid">
+                                <div class="span6">
+                                    <button class="button btn btn-success btn-large" type="submit" style="float: right;">Ingresar</button>
+                                </div>
+                                <div class="span6">
+                                    <label class="choice singin-hotel" for="signin" style="color: #000;">Si no tienes una cuenta. Reg&iacute;strate
+                                        <a th:href="@{/signin}"><strong>Aqu&iacute;</strong></a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div> <!-- .actions -->
+
+                    </form>
+
+                </div> <!-- /content -->
+
+            </div> <!-- /account-container -->
+
+        </div>
+
+        <div layout:fragment="scripts">
+
+
+        </div>
+    </body>
+</html>
+
+

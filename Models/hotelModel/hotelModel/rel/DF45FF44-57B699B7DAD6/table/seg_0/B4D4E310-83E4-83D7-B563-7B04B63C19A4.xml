@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B4D4E310-83E4-83D7-B563-7B04B63C19A4" name="HABITACION">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:52:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDHABITACION" id="F5C6BEBB-AEF2-E4CD-0300-301DFA20B91B">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SQ_HABITACION</autoIncrementSequenceName>
+<autoIncrementTriggerName>TG_HABITACION</autoIncrementTriggerName>
+</Column>
+<Column name="NROHABITACION" id="E5412452-3CB3-7C5E-34AB-5A2E770A6A18">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISPONIBLE" id="70D83A3C-76EE-0024-375C-C2F7C0F6B3B2">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<defaultValue>1</defaultValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="EE86DA63-2963-DC48-A9F9-35D12E11C334">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDTIPOHAB" id="CCD34E84-B54E-E212-AD0E-404E2AAC9721">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<delegate>81B44DCA-7324-69C8-2853-922D1D0C7D85</delegate>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDEBCEB6-0106-8DAC-3B12-07ACB71E8D4F" referredColumn="81B44DCA-7324-69C8-2853-922D1D0C7D85"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88DB97AE-078C-5DF2-4DB6-BA458091CEEC" name="PK_HABITACION">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5C6BEBB-AEF2-E4CD-0300-301DFA20B91B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24EF95E4-4B88-8E7D-EDD8-6CDC2FECA1A8" name="HABITACION_UN">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5412452-3CB3-7C5E-34AB-5A2E770A6A18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70F18532-C7DB-2E93-B4DE-F57BDCD3727F" name="PK_HABITACION">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5C6BEBB-AEF2-E4CD-0300-301DFA20B91B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DE5A64D-F32B-9E89-6AEF-8C5B7918C841" name="FK_HABITACION_TIPO">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 06:00:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCD34E84-B54E-E212-AD0E-404E2AAC9721"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

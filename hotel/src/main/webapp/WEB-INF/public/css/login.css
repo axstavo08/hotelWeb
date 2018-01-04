@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05/11/2016, 03:36:33 PM
+    Author     : Tavo
+*/
+
+.singin-hotel{
+    margin: 15px 0px;
+}
+
+.login-labels{
+    display: initial !important;
+    color: #080808;
+}
+
+.errorGeneral{
+    font-size: 14px;
+}

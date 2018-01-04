@@ -1,0 +1,65 @@
+<html   xmlns="http://www.w3.org/1999/xhtml"   
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorator="layout/base">
+    <head>
+        <title>Hotel - Inicio</title>
+        <link href="js/library/openlayers/css/ol.css" th:href="@{/js/library/openlayers/css/ol.css}" rel="stylesheet" type="text/css" />
+        <link href="css/information.css" th:href="@{/css/information.css}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div layout:fragment="container">
+            <div class="row information">
+                <div class="col-sm-6">
+                    <div class = "widget">
+                        <div class="widget-header">
+                            <h3 class="infoBox1">Informaci&oacute;n de Hotel</h3>
+                        </div>
+                        <div class="widget-content">
+                            <div class="content">
+                                <div class="infoHotel">
+                                    <h3>Direcci&oacute;n</h3>
+                                    <p class="titles-info">
+                                        Jr. Manuel del Pino 116 - Santa Beatriz, Cercado de Lima (Alt. 14 de Arenales)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="infoHotel">
+                                    <h3>Contacto:</h3>
+                                    <p class="titles-info">
+                                        T. (511) 471 1546 - reservas@hotelpalaceperu.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="map-info">
+                        <div class = "widget">
+                            <div class="widget-content">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div layout:fragment="scripts">
+            <script src="js/library/openlayers/build/ol.js" th:src="@{/js/library/openlayers/build/ol.js}"></script>
+            <script src="js/map.js" th:src="@{/js/map.js}"></script>
+
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" th:inline="javascript" >
+
+    $(document).ready(function () {
+        initMap();
+    });
+
+</script>

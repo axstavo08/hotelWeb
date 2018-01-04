@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="CA2136D9-8D0A-5DF4-85D4-60F604C94EAA">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 04:24:42 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

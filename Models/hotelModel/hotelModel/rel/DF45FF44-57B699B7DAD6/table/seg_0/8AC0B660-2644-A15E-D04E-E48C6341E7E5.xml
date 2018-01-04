@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8AC0B660-2644-A15E-D04E-E48C6341E7E5" name="TIPOHABITACION">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:58:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDTIPOHAB" id="81B44DCA-7324-69C8-2853-922D1D0C7D85">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:59:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SQ_TIPOHABITACION</autoIncrementSequenceName>
+<autoIncrementTriggerName>TG_TIPOHABITACION</autoIncrementTriggerName>
+</Column>
+<Column name="NOMBRE" id="16EB85A1-517B-B096-1855-A4AF9731FEC4">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:59:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO" id="00BF7606-1EE1-D2B7-F7A6-4AF36A2416D8">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:59:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12236DEC-221E-335D-30E2-9EF8E7EC914F" name="PK_TIPOHABITACION">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:59:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81B44DCA-7324-69C8-2853-922D1D0C7D85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F40B3C16-B33E-E160-34EA-CFC20E971057" name="TIPOHABITACION_UN">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:59:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16EB85A1-517B-B096-1855-A4AF9731FEC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF3D2EDC-EDFB-786D-F92D-F51E61169694" name="PK_TIPOHABITACION">
+<createdBy>Tavo</createdBy>
+<createdTime>2016-10-27 05:59:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>hotelModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81B44DCA-7324-69C8-2853-922D1D0C7D85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/11/2016, 01:48:08 PM
+    Author     : Tavo
+*/
+
+.subnavbarEditEmployee .container > ul > li.active > a {
+	
+	border-bottom:3px solid #09194f !important;
+	color: #383838;
+}
+
+.tableClient{
+    text-align: center !important;
+}
+
+.tableClient th{
+    font-size: 14px;
+    text-align: center !important;
+}
+
+.tableClient td{
+    font-size: 12px;
+    text-align: center !important;
+}
+
+.textAlignCenter{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.servicesTitle{
+    font-size: 24px;
+    color: #09194f;
+}
+
+.error{
+    color: #b20e0e !important;
+    text-align: center !important;
+}

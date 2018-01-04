@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <title>Signin</title>
+    </head>
+    <body>
+        <div th:fragment="modalSignin" class="modal fade" id="modalSignin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-body modal-bodyHotel">
+                <div class="well modal-wellHotel">
+                    <div id="myTabContent" class="tab-content">
+                        <div id="conditionalModal" th:if="${signinSuccess}==0">
+                            <h3 align="left">Se realiz&oacute; el registro correctamente. Presione <strong>Aceptar</strong> para iniciar sesi&oacute;n.</h3>
+                            <div align="center" class="modal-button">
+                                 <a th:href="@{/login}">
+                                 <button name="modal" class="btn btn-success btn-large">Aceptar</button> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

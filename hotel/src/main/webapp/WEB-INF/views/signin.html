@@ -1,0 +1,100 @@
+<html   xmlns="http://www.w3.org/1999/xhtml"   
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorator="layout/base">
+    <head>
+        <title>Hotel - Inicio</title>
+        <link href="css/signin.css" th:href="@{/css/signin.css}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div layout:fragment="container">
+
+            <div class="account-container register" style="padding: 20px 0;">
+                <div class="content clearfix">
+                    <form method="POST" th:action="@{/signin}" th:object="${signin}" data-js="signin">
+                        <div th:if="${errorSignin}==1" class="alert alert-danger errorGeneral">
+                            <strong>Problema:</strong> El registro se complet&oacute; con errores. Favor de volver a intentar.
+                        </div>
+                        <h1 style="text-align: center;">Reg&iacute;strate</h1>			
+                        <div class="login-fields">
+                            <div class="field">
+                                <label for="userName">Usuario</label>
+                                <input type="text" id="userName" name="userName" placeholder="Usuario" class="login" th:field="*{userName}"></input>
+                                <span th:if="${#fields.hasErrors('userName')}" th:errors="*{userName}" class="error">userName Error</span>
+                            </div> <!-- /field -->
+
+                            <div class="field">
+                                <label for="password">Contrase&ntilde;a</label>	
+                                <input type="password" id="password" name="password" placeholder="Contrase&ntilde;a" class="login" th:field="*{password}"></input>
+                                <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="error">password Error</span>
+                            </div> <!-- /field -->
+
+                            <div class="field">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" placeholder="Nombre" class="login" th:field="*{name}"></input>
+                                <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="error">name Error</span>
+                            </div> <!-- /field -->
+
+                            <div class="field">
+                                <label for="apellidoPat">Apellido Paterno</label>
+                                <input type="text" id="apellidoPat" name="apellidoPat" placeholder="Apellido Paterno" class="login" th:field="*{lastNamePat}"></input>
+                                <span th:if="${#fields.hasErrors('lastNamePat')}" th:errors="*{lastNamePat}" class="error">lastNamePat Error</span>
+                            </div> <!-- /field -->
+
+                            <div class="field">
+                                <label for="apellidoMat">Apellido Materno</label>
+                                <input type="text" id="apellidoMat" name="apellidoMat" placeholder="Apellido Materno" class="login" th:field="*{lastNameMat}"></input>
+                                <span th:if="${#fields.hasErrors('lastNameMat')}" th:errors="*{lastNameMat}" class="error">lastNameMat Error</span>
+                            </div> <!-- /field -->
+
+                            <div class="field">
+                                <label for="email">Correo Electr&oacute;nico</label>
+                                <input type="text" id="email" name="email" placeholder="Correo Electr&oacute;nico" class="login" th:field="*{email}"></input>
+                                <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="error">email Error</span>
+                            </div> <!-- /field -->
+
+                            <div class="field">
+                                <label for="city">Ciudad</label>
+                                <input type="text" id="city" name="city" placeholder="Ciudad" class="login" th:field="*{city}"></input>
+                                <span th:if="${#fields.hasErrors('city')}" th:errors="*{city}" class="error">city Error</span>
+                            </div> <!-- /field -->
+
+                            <div class="field">
+                                <label for="country">Pa&iacute;s</label>
+                                <input type="text" id="country" name="country" placeholder="Pa&iacute;s" class="login" th:field="*{country}"></input>
+                                <span th:if="${#fields.hasErrors('country')}" th:errors="*{country}" class="error">country Error</span>
+                            </div> <!-- /field -->
+
+                        </div> <!-- /login-fields -->
+                        <div class="login-actions">
+                            <a th:href="@{/login}">
+                                <button class="button btn btn-success btn-large" type="submit">Registrar</button>
+                            </a>
+                        </div> <!-- .actions -->
+                    </form>
+                </div> <!-- /content -->
+            </div> <!-- /account-container -->
+
+
+
+
+        </div>
+
+        <div layout:fragment="scripts">
+
+            <script src="js/signin.js" th:src="@{/js/signin.js}"></script>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" th:inline="javascript" >
+
+    var signinSuccess = /*[[${signinSuccess}]]*/ '0';
+
+    $(document).ready(function () {
+        initSignin();
+    });
+
+</script>
+
+

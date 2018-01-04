@@ -1,0 +1,125 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03/11/2016, 10:49:32 PM
+    Author     : Tavo
+*/
+
+
+
+.account-container {
+	width: 380px; 
+	display: block;
+	margin: 60px auto 60px auto;
+	
+	background: #f9f9f9;
+	
+	border: 1px solid #d5d5d5;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	box-shadow:  0px 0px 2px #dadada, inset 0px -3px 0px #e6e6e6;
+}
+
+.account-container h1 {
+	margin-bottom: 40px;
+	
+	color: #525252;
+}
+
+@media (max-width: 480px) {
+	
+	.account-container {
+		width: 280px;	
+		margin-top: 35px;
+	}
+	
+	.login-fields input {
+		width: 160px;
+	}
+	
+	.login-social {
+		width: 100%;
+	}
+	
+	.twitter {
+		display: block;
+		margin-bottom: 1em;
+	}
+	
+	.register .login-fields input {
+		width: 204px;
+		padding-left: 6px;
+	}
+	
+}
+
+.content {
+	padding: 16px 28px 23px;
+} 
+
+.login-fields {
+	
+}
+
+.login-fields .field {
+	margin-bottom: 1.25em;
+}
+
+.login-fields label {
+	display: none;
+}
+
+.login-fields input {
+	font-family: 'Open Sans';
+	font-size: 14px;
+        font-weight: bold;
+	color: #191818;
+	padding: 11px 15px 10px 50px;
+	background-color: #fdfdfd;
+	width: 255px;
+	display: block;
+	margin: 0;
+	box-shadow: inset 2px 2px 4px #f1f1f1;
+}
+
+.register .login-fields input {
+	width: 100%;
+	padding-left: 15px;
+}
+
+.register .login-actions {
+	margin-bottom: 0;
+}
+
+span.login-checkbox {
+	float: left;
+	margin-top: 31px;
+}
+
+.modal-bodyHotel{
+    width: 50% !important;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+.modal-wellHotel{
+    background-color: #f2f4f7 !important;
+}
+
+.modal-button{
+    margin: 25px auto;
+}
+
+.error{
+    color: #b20303;
+}
+
+.errorGeneral{
+    font-size: 14px;
+}
